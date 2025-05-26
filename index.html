@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Few-Shot Prompt Card</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .legend {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .tag {
+      border-radius: 6px;
+      padding: 0.25rem 0.5rem;
+      font-weight: 600;
+    }
+
+    .task    { background-color: #fde7e7; color: #5c1a1a; }
+    .context { background-color: #fff7d6; color: #5a4e00; }
+    .format  { background-color: #e6f4ea; color: #184d33; }
+
+    .instruction {
+      background-color: #f8f9fa;
+      border: 1px solid #dfe1e5;
+      border-radius: 12px;
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      border-radius: 6px;
+      padding: 0.1rem 0.4rem;
+    }
+
+    .instruction .task     { background-color: #fde7e7; }
+    .instruction .context  { background-color: #fff7d6; }
+    .instruction .format   { background-color: #e6f4ea; }
+
+    .example {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid #ccc;
+    }
+
+    .example p {
+      margin: 0.25rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="legend">
+      <span class="tag task">Task</span>
+      <span class="tag context">Context</span>
+      <span class="tag format">Format</span>
+    </div>
+
+    <div class="instruction">
+      <span class="highlight task">I need help drafting short, encouraging follow-up email lines for prospects who haven't responded.</span>
+      <span class="highlight context">Maintain a positive and gentle nudging tone.</span>
+
+      <div class="example">
+        <p><strong>Example 1:</strong> Previous outreach subject: Following up on our demo</p>
+        <p><strong>Follow-up line:</strong> "Hi [Prospect Name], just wanted to gently follow up on our recent demo of the Revolut Business platform. Hope you’re having a great week!"</p>
+      </div>
+
+      <div class="example">
+        <p><strong>Example 2:</strong> Previous outreach subject: Quick question about your international payments</p>
+        <p><strong>Follow-up line:</strong> "Hi [Prospect Name], circling back on my previous email regarding your international payments. Understand you're busy, but thought this might still be on your radar."</p>
+      </div>
+
+      <span class="highlight format">Now, based on these examples, draft a similar follow-up line for this scenario.</span>
+    </div>
+  </div>
+
+</body>
+</html>
